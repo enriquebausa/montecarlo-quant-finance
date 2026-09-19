@@ -30,7 +30,11 @@ jupyter notebook montecarlo.ipynb
 
 ## Sample results
 
-*(add 2-3 images here once uploaded — see note below)*
+**Monte Carlo convergence (π estimation)**
+![π convergence](images/pi_convergence.png)
 
----
-This project was built as a self-directed learning exercise to establish strong foundations in stochastic simulation before moving into more advanced quantitative finance topics.
+**Correlated GBM price paths**
+![Correlated paths](images/correlated_paths.png)
+
+**Option payoff distribution**
+![Payoff histogram](images/payoff_histogram.png)
