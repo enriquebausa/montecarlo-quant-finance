@@ -10,7 +10,7 @@ A from-scratch implementation of Monte Carlo simulation, built progressively fro
 4. **Geometric Brownian Motion (GBM) & Value at Risk (VaR)** — the standard model for asset prices, used to simulate thousands of price paths and quantify downside risk via percentiles.
 5. **Correlated Portfolio (Cholesky Decomposition)** — simulating multiple correlated assets, and quantifying the diversification benefit of holding uncorrelated assets versus highly correlated ones.
 6. **Option Pricing: Monte Carlo vs. Black-Scholes** — pricing a European call option by simulation, and validating the result against the closed-form analytical solution.
-
+7. **Honest Backtesting** — calibrating parameters from historical data only, then validating simulated scenarios against real, subsequently observed prices (avoiding data leakage).
 ## Why this structure
 
 Each section builds directly on the previous one. The same statistical principle validated in Section 1 (more simulations → lower error, at a predictable rate) reappears at the end of the project when validating option prices against Black-Scholes — tying the simplest possible example to a real derivative pricing application.
@@ -38,3 +38,7 @@ jupyter notebook montecarlo.ipynb
 
 **Option payoff distribution**
 ![Payoff histogram](images/payoff_histogram.png)
+
+**Out-of-sample validation (honest backtesting)**
+![Out-of-sample validation](images/backtesting_validation.png)
+
